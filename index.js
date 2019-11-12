@@ -136,9 +136,12 @@ function processProduct(num1, num2, callback) {
  * "lady gaga" and `['foo', 'bar']` and `(bool) => bool ? 'nice!' : 'sad'`,
  * should return "sad".
 */
-function processContains(/* CODE HERE */) {
-  /* CODE HERE */
-}
+function processContains(item, list, callback) {
+    test = false
+    for (var i=0; i<list.length; i++) 
+        list[i] == item ? test = true : console.log(test)
+    return callback (test)
+    }
 
 /**
  * ### Challenge `processDuplicateFree`
